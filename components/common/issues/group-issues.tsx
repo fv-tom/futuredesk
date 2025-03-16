@@ -22,6 +22,7 @@ export function GroupIssues({ status, issues, count }: GroupIssuesProps) {
 
    return (
       <div
+         data-status-id={status.id}
          className={cn(
             'bg-conainer',
             viewType === 'grid'
