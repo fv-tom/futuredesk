@@ -13,12 +13,12 @@ const geistMono = Geist_Mono({
    subsets: ['latin'],
 });
 
-const siteUrl = 'https://circle.lndev.me';
+const siteUrl = 'https://futuredesk.vercel.app';
 
 export const metadata: Metadata = {
    title: {
-      template: '%s | Circle by lndev-ui',
-      default: 'Circle by lndev-ui',
+      template: '%s | Circle',
+      default: 'Circle',
    },
    description:
       'Project management interface inspired by Linear. Built with Next.js and shadcn/ui, this application allows tracking of issues, projects and teams with a modern, responsive UI.',
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
             url: `${siteUrl}/banner.png`,
             width: 2560,
             height: 1440,
-            alt: 'lndev/ui',
+            alt: 'Circle',
          },
       ],
    },
@@ -49,8 +49,8 @@ export const metadata: Metadata = {
          },
       ],
    },
-   authors: [{ name: 'Leonel NGOYA', url: 'https://lndev.me/' }],
-   keywords: ['ui', 'lndev', 'components', 'template'],
+   authors: [{ name: 'Circle Team', url: 'https://futuredesk.vercel.app' }],
+   keywords: ['ui', 'components', 'template'],
 };
 
 import { ThemeProvider } from '@/components/layout/theme-provider';

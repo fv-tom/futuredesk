@@ -36,7 +36,7 @@ export function OrgSwitcher() {
                            LN
                         </div>
                         <div className="grid flex-1 text-left text-sm leading-tight">
-                           <span className="truncate font-semibold">lndev-ui</span>
+                           <span className="truncate font-semibold">Circle</span>
                         </div>
                         <ChevronsUpDown className="ml-auto" />
                      </SidebarMenuButton>
@@ -74,7 +74,7 @@ export function OrgSwitcher() {
                               <div className="flex aspect-square size-6 items-center justify-center rounded bg-orange-500 text-sidebar-primary-foreground">
                                  LN
                               </div>
-                              lndev-ui
+                              Circle
                            </DropdownMenuItem>
                            <DropdownMenuSeparator />
                            <DropdownMenuItem>Create or join workspace</DropdownMenuItem>

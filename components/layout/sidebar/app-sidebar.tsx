@@ -71,7 +71,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                         <X className="size-4" />
                      </div>
                      <div className="text-balance text-lg font-semibold leading-tight group-hover/sidebar:underline">
-                        Fine components coded by lndev.
+                        Fine components for your project.
                      </div>
                      <div>
                         A fun collection of small, well-coded components to streamline your
@@ -81,13 +81,13 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                         target="_blank"
                         rel="noreferrer"
                         className="absolute inset-0"
-                        href="https://ui.lndev.me"
+                        href="https://futuredesk.vercel.app"
                      >
                         <span className="sr-only">Deploy to Vercel</span>
                      </Link>
                      <Button size="sm" className="w-full">
                         <Link href="https://ui.lndev.me" target="_blank" rel="noopener noreferrer">
-                           ui.lndev.me
+                           View Demo
                         </Link>
                      </Button>
                   </div>
