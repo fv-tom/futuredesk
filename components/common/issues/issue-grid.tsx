@@ -2,8 +2,9 @@
 
 import { Issue } from '@/mock-data/issues';
 import { format } from 'date-fns';
-import { motion, Reorder } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { useIssuesStore } from '@/store/issues-store';
+import { status } from '@/mock-data/status';
 import { AssigneeUser } from './assignee-user';
 import { LabelBadge } from './label-badge';
 import { PrioritySelector } from './priority-selector';

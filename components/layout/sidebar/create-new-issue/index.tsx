@@ -60,7 +60,7 @@ export function CreateNewIssue() {
 
    useEffect(() => {
       setAddIssueForm(createDefaultData());
-   }, [defaultStatus]);
+   }, [defaultStatus, createDefaultData]);
 
    const createIssue = () => {
       if (!addIssueForm.title) {
