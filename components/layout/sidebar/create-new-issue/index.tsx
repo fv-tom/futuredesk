@@ -6,7 +6,7 @@ import { Heart } from 'lucide-react';
 import { Switch } from '@/components/ui/switch';
 import { Label } from '@/components/ui/label';
 import { RiEditLine } from '@remixicon/react';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { Issue } from '@/mock-data/issues';
 import { priorities } from '@/mock-data/priorities';
 import { status } from '@/mock-data/status';
@@ -36,9 +36,9 @@ export function CreateNewIssue() {
             .padStart(3, '0');
       }
       return identifier;
-   };
+   }, [defaultStatus, generateUniqueIdentifier]);
 
-   const createDefaultData = () => {
+   const createDefaultData = useCallback(() => {
       const identifier = generateUniqueIdentifier();
       return {
          id: uuidv4(),
@@ -53,8 +53,8 @@ export function CreateNewIssue() {
          cycleId: '',
          project: undefined,
          subissues: [],
-      };
-   };
+      }, [defaultStatus, generateUniqueIdentifier]);
+   }, [defaultStatus, generateUniqueIdentifier]);
 
    const [addIssueForm, setAddIssueForm] = useState<Issue>(createDefaultData());
 
@@ -73,7 +73,7 @@ export function CreateNewIssue() {
          closeModal();
       }
       setAddIssueForm(createDefaultData());
-   };
+   }, [defaultStatus, generateUniqueIdentifier]);
 
    return (
       <Dialog open={isOpen} onOpenChange={(value) => (value ? openModal() : closeModal())}>
